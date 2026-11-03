@@ -51,7 +51,6 @@
         </p>
       </section>
       <aside>
-        What inspires me?>
         <h2>What inspires me?</h2>
         <blockquote>"Life goes on!" - BTS</blockquote>
         <p>
@@ -61,7 +60,6 @@
         <p>Book I am reading:<cite> Clean Code</cite> by Robert C. Martin</p>
       </aside>
       <section id="skills">
-        Skills>
         <h2>Skills</h2>
         <ul>
           <li>
@@ -103,14 +101,10 @@
           <dt>Chrome DevTools</dt>
           <dd>Inspects the HTML of any page and helps me find mistakes.</dd>
           <dt>Git and Github</dt>
-          <dd>
-            Saves versions of my code and shares my projects
-            online;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-          </dd>
+          <dd>Saves versions of my code and shares my projects online.</dd>
         </dl>
       </section>
       <section id="projects">
-        Projects>
         <h2>Projects</h2>
         <article>
           <h3>Simple Calculator</h3>
@@ -146,7 +140,6 @@ int main() {
         <p><a href="projects.html">See all my projects</a></p>
       </section>
       <section id="education">
-        Education>
         <h2>Education</h2>
         <h3>Bachelor of Science in Software Engineering</h3>
         <p>Addis Ababa Science and Technology University, 2024-present</p>
@@ -210,7 +203,6 @@ int main() {
         </table>
       </section>
       <section id="contact">
-        Contact>
         <h2>Contact</h2>
         <p>Address:<br />Addis Ababa,<br />Ethiopia</p>
         <p>
@@ -258,6 +250,44 @@ int main() {
           />
         </map>
       </section>
+      <h3>Send me a message</h3>
+      <form action="thankyou.html" method="get">
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <label for="fullname">Full name</label>
+          <input type="text" id="fullname" name="fullname" />
+          <br />
+          <br />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </fieldset>
+        <fieldset>
+          <legend>Your message</legend>
+
+          <label for="reason">Reason for contacting me</label>
+          <select id="reason" name="reason">
+            <optgroup label="work">
+              <option value="internship">Internship offer</option>
+              <option value="freelance">Freelance project</option>
+              <option value="job">Full-time job</option>
+            </optgroup>
+            <optgroup label="study">
+              <option value="group-project">Group project</option>
+              <option value="tutoring">Tutoring</option>
+            </optgroup>
+            <option value="other">Other</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="6" cols="48"></textarea>
+        </fieldset>
+        <button type="submit">Send Message</button>
+        <button tppe="clear">Clear</button>
+      </form>
     </main>
     <footer>Copyright 2026 Hermon Ermias. All rights reserved.</footer>
   </body>
