@@ -32,6 +32,15 @@
         <a href="#projects">Projects</a> | <a href="#education">Education</a> |
         <a href="#contact">Contact</a>
       </nav>
+      <button type="button"
+      onclick="document.getElementById('hireDialog').showModal()">Hire Me</button>
+      <dialog id="hireDialog">
+        <h2>Available for Internships</h2>
+        <p>I am available for internships and freelance web projects from June 2027.</p>
+        <p><a href="#contact">Send me a message</a> or <a href="files/cv.pdf">download my CV</a>.</p>
+        <button type="button" onclick="document.getElementById('hireDialog').close()">Close</button>
+        </dialog>
+      </dialog>
     </header>
 
     <main>
@@ -100,6 +109,23 @@
             </ul>
           </li>
         </ul>
+        <h3>Skill levels</h3>
+        <p>
+          <label for="lvl-html">HTML</label>
+          <meter id="lvl-html" value="0.8" min="0" max="1">80%</meter>
+        </p>
+        <p>
+          <label for="lvl-python">Python</label>
+          <meter id="lvl-python" value="0.7" min="0" max="1">70%</meter>
+        </p>
+        <p>
+          <label for="lvl-js">JavaScript</label>
+          <meter id="lvl-js" value="0.2" min="0" max="1" low="0.3" high="0.7" optimum="1">20%</meter>
+        </p>
+        <p>
+          <label for="lvl-cpp">C++</label>
+          <meter id="lvl-cpp" value="0.5" min="0" max="1" low="0.3" high="0.7" optimum="1">50%</meter>
+        </p>
         <h3>My Learning Roadmap</h3>
         <ol type="1">
           <li>HTML structure and content</li>
@@ -157,6 +183,10 @@ int main() {
         <h2>Education</h2>
         <h3>Bachelor of Science in Software Engineering</h3>
         <p>Addis Ababa Science and Technology University, 2024-present</p>
+        <p>
+          <label for="degree">Degree progress</label>
+          <progress id="degree" value="40" max="100">40%</progress>
+        </p>
         <table border="1" cellpadding="8" cellspacing="0">
           <caption>
             Academic Record - BSc in Software Engineering
@@ -226,16 +256,6 @@ int main() {
           >
         </p>
         <p>Phone: <a href="tel:+251911123567">+251 911 123 567</a></p>
-        <h3>Where I study</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1970.9700290640362!2d38.80737159839477!3d8.885165400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793882053121!5m2!1sen!2set"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-        ></iframe>
         <p>
           Github: <a href="https://github.com/nieiamsi">github.com/nieiamsi</a>
         </p>
@@ -273,6 +293,16 @@ int main() {
             alt="Email"
           />
         </map>
+        <h3>Where I study</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1970.9700290640362!2d38.80737159839477!3d8.885165400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b82a7e392203f%3A0xb05f440eacc98f9f!2sAddis%20Ababa%20Science%20and%20Technology%20University!5e0!3m2!1sen!2set!4v1793882053121!5m2!1sen!2set"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
       </section>
       <h3>Send me a message</h3>
       <form action="thankyou.html" method="post" enctype="multipart/form-data">
