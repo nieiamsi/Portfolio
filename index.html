@@ -129,28 +129,28 @@
         </p>
         <canvas id="skillbarchart" width="400" height="200">Bar chart of my skills</canvas>
         <script>
-          const skillCanvas = document.getElementById("skillbarchart");
-          const skillCtx = skillCanvas.getContext("2d");
+          const skillsCanvas = document.getElementById("skillbarchart");
+          const skillsCtx = skillsCanvas.getContext("2d");
 
           // Draw the bars
-          skillCtx.fillStyle = "#1f5fa8";
-          skillCtx.fillRect(50, 50, 50, 100); // HTML
-          skillCtx.fillRect(150, 80, 50, 70); // Python
-          skillCtx.fillRect(250, 140, 50, 10); // JavaScript
-          skillCtx.fillRect(350, 100, 50, 50); // C++
+          skillsCtx.fillStyle = "#1f5fa8";
+          skillsCtx.fillRect(50, 50, 50, 100); // HTML
+          skillsCtx.fillRect(150, 80, 50, 70); // Python
+          skillsCtx.fillRect(250, 140, 50, 10); // JavaScript
+          skillsCtx.fillRect(350, 100, 50, 50); // C++
 
           // Add labels
-          skillCtx.fillStyle = "#000000";
-          skillCtx.font = "16px Arial";
-          skillCtx.textAlign = "center";
-          skillCtx.fillText("HTML", 75, 170);
-          skillCtx.fillText("Python", 175, 170);
-          skillCtx.fillText("JavaScript", 275, 170);
-          skillCtx.fillText("C++", 375, 170);
+          skillsCtx.fillStyle = "#000000";
+          skillsCtx.font = "16px Arial";
+          skillsCtx.textAlign = "center";
+          skillsCtx.fillText("HTML", 75, 170);
+          skillsCtx.fillText("Python", 175, 170);
+          skillsCtx.fillText("JavaScript", 275, 170);
+          skillsCtx.fillText("C++", 375, 170);
 
           // Add title
-          skillCtx.font = "20px Arial";
-          skillCtx.fillText("My Skills", skillCanvas.width / 2, 30);
+          skillsCtx.font = "20px Arial";
+          skillsCtx.fillText("My Skills", skillsCanvas.width / 2, 30);
         </script>
         <h3>My Learning Roadmap</h3>
         <ol type="1">
