@@ -15,46 +15,53 @@
     </header>
     <main>
       <section id="projects">
-        <h2>Projects</h2>
+        <a href="index.html">Back to Home</a>
         <p>
           Here are some of my projects that I have worked on. You can find more
           on my GitHub profile.
         </p>
       </section>
-      <section id="projectlist">
-        <table border="1" cellpadding="10" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Project Name</th>
-              <th>Language</th>
-              <th>Year</th>
-              <th>Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Portfolio Website</td>
-              <td>HTML</td>
-              <td>2023</td>
-              <td><a href="index.html">Portfolio</a></td>
-            </tr>
-            <tr>
-              <td>Seralegn</td>
-              <td>Dart</td>
-              <td>2026</td>
-              <td>
-                <a href="https://github.com/nieiamsi/seralegn.git">Seralegn</a>
-              </td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th colspan="3">Total Projects</th>
-              <th>2</th>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
+     </section>
+      <section id="projects-list">
+        <article>
+          <h3>Simple Calculator</h3>
+          <img
+            src="images/project-calculator.png"
+            alt="Calculator showing 12+30=42"
+            width="400"
+            height="250"
+          />
+          <p>A calculator that adds, subtracts, multiplies, and divides.</p>
+          <h3>Watch the demo</h3>
+          <video controls poster="images/project-demo-poster.jpg" width="640" height="360">
+            <source src="media/project-demo.mp4" type="video/mp4" />
+            <source src="media/project-demo.webm" type="video/webm" />
+            <source src="media/project-demo.vtt" kind="captions" srclang="en" label="English" default>
+            Your browser does not support the video tag.
+          </video>
+        </article>
+        <article>
+          <h3>Library Management System</h3>
+          <img src="images/project-library.png" alt="Menu of the system" />
+          <p>A console program for borrowing and returning books.</p>
+        </article>
+        <article>
+          <h3>My First Program</h3>
+          <p>
+            The first thing I wrote in Python was
+            <code>print("Hello, World!")</code>. Later I wrote this loop.
+          </p>
+          <pre><code>for i in range(3):
+          print("Hello", i)
+      </code></pre>
+          <p>I then learned C++ and printed hello world.</p>
+          <pre><code>#include &lt;iostream&gt;
+int main() {
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+        </article>
+        </section>
     </main>
     <footer>Copyright 2026 Hermon Ermias. All rights reserved.</footer>
   </body>
